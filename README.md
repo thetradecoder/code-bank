@@ -11,6 +11,16 @@ axios.post('url-here', dataToSend)
 .then(d=>window.alert('submitted'))
 .catch(err=>window.alert('submission failed'))
 ```
+## Get data with axios
+```
+axios.get('url-here')
+.then(res=>{
+let data = res.data;
+// do something with data
+})
+.catch(err=>console.log(err));
+```
+
 ## Update data with axios (put)
 ```
 const updateData = {
