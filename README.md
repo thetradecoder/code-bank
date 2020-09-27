@@ -7,7 +7,7 @@ const dataToSend = {
 field1:'value1',
 field2:'value2'
 }
-axios.post('url', dataToSend)
+axios.post('url-here', dataToSend)
 .then(d=>window.alert('submitted'))
 .catch(err=>window.alert('submission failed'))
 ```
@@ -18,7 +18,14 @@ field1:'updated f1 value',
 field2:'updated f2 value'
 }
 
-axios.put('url', updateData)
+axios.put('url-here', updateData)
 .then(d=>window.alert('updated'))
 .catch(err=>window.alert('update failed'))
+```
+## Delete data with axios 
+```
+const id = 'id-to-delete....';
+axios.delete(`url-here/${id}`)
+.then(d=>window.alert('deleted'))
+.catch(err=>window.alert('failed'))
 ```
